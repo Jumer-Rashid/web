@@ -1,0 +1,155 @@
+<html>
+    <head>
+        <title>coffee </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?famliy=kaushan+script|poppins&display=swap" rel="stylelesheet">
+    </head>
+    <body>
+        <section id="banner">  
+            <img src="img/cr.jpg" class="logo">
+            <div class="banner-text">
+                <h1>COFFEE SHOP</h1>
+                <p>Welcome in the world of coffee</p>               
+                <div class="banner-btn">
+                    <a href="#"><span></span>find Out</a>
+                    <a href="#"><span></span>Read More</a>
+                </div>
+            </div>
+        </section>
+        <div  id="sideNav">
+            <nav>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">PRODUCT</a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="menuBtn">
+            <img src="img/menu.png" id="menu">  
+        </div>
+
+        <!--Features-->
+        <section id="feature">
+            <div class="title-text">
+                <p>features</p>
+                <h1>why choose us</h1>
+            </div>
+            <div class="feature-box">
+                <div class="features">
+                    <h1>Experienced staff</h1>
+                    <div class="features-desc">
+                        <div class="features-icon"></div>
+                        <div class="features-text">
+                            <p>Every cup of our quality artisan coffee starts with locally sourced, hand picked ingredients. Once you try it, our coffee will be a blissful addition to your everyday morning routine - we guarantee it!</p>
+                        </div>
+                    </div>
+                    <h1>Customer care</h1>
+                    <div class="features-desc">
+                        <div class="features-icon"></div>
+                        <div class="features-text">
+                            <p>Every cup of our quality artisan coffee starts with locally sourced, hand picked ingredients. Once you try it, our coffee will be a blissful addition to your everyday morning routine - we guarantee it!</p>
+                        </div>
+                    </div>
+            </div>
+            <div class="features img">
+                <img src="img/intro.jpg" height="300" weight="600" >
+        </div>
+        </section>
+
+        <!---Protucts-->
+        <section id="Product">
+            <div class="title-text">
+                <p>Our Product</p>
+                <h1>Get a Good And Quality</h1>
+            </div>
+            <div class="product-box">
+                  <div class="single-product">
+                      <img src="img/products-01.jpg">
+                      <div class="overlay"></div>
+                      <div class="product-desc">
+                          <h2>Test</h2>
+                          <hr>
+                          <p class="mb-0">We take pride in our work, and it shows. Every time you order a beverage from us, we guarantee that it will be an experience worth having. Whether it's our world famous Venezuelan Cappuccino, a refreshing iced herbal tea, or something as simple as a cup of speciality sourced black coffee, you will be coming back for more.</p>
+                      </div>
+                  </div> 
+                  <div class="single-product">
+                    <img src="img/products-02.jpg">
+                    <div class="overlay"></div>
+                    <div class="product-desc">
+                        <h2>Break</h2>
+                        <hr>
+                        <p class="mb-0">Our seasonal menu features delicious snacks, baked goods, and even full meals perfect for breakfast or lunchtime. We source our ingredients from local, oragnic farms whenever possible, alongside premium vendors for specialty goods.</p>
+                    </div>
+                  </div> 
+                  <div class="single-product">
+                    <img src="img/products-03.jpg">
+                    <div class="overlay"></div>
+                    <div class="product-desc">
+                        <h2>product</h2>
+                        <hr>
+                        <p class="mb-0">Travelling the world for the very best quality coffee is something take pride in. When you visit us, you'll always find new blends from around the world, mainly from regions in Central and South America. We sell our blends in smaller to large bulk quantities. Please visit us in person for more details.</p>
+                    </div>
+                    
+                  </div>  
+            </div>
+        </section>
+
+        <!--promise-->
+        <section id="promise">
+            <div class="title-text">
+                <p>Our promise</p>
+                <h1>To You</h1>
+            </div>
+            <div class="promise-row">
+                <p>When you walk into our shop to start your day, we are dedicated to providing you with friendly service, a welcoming atmosphere, and above all else, excellent products made with the highest quality ingredients. If you are not satisfied, please let us know and we will do whatever we can to make things right!</p>
+            </div>
+        </section>
+
+        <!---footer--->
+        <section id="footer">
+            <div class="title-text">
+                <p>CONTACT</p>
+                <h1>visit shop today</h1>
+            </div>
+            <div class="footer-row">
+                <div class="footer-left">
+                    <h1>Opening hours</h1>
+                    <p><i class="fa fa-clock-o"></i>Monday to sunday - 6:00 am to 9:00 pm</p>
+                </div>
+                <div class="footer-right">
+                    <h1>Get in touch</h1>
+                    <p>256 Mlimani City, Dar Es Salaam<i class="fa fa-map-maker"></i></p>
+                    <p>coffeeshop@gmail.com<i class="fa fa-paper-plane"></i></p>
+                    <p>+255 684756668<i class="fa fa-phone"></i></p>
+                </div>
+            </div>
+
+            <div class="social-link">
+                <p>CopyRight @2020</p>
+            </div>
+        </section>
+        
+        <script>
+            var menuBtn=document.getElementById("menuBtn")
+            var sideNav=document.getElementById("sideNav")
+            var menu=document.getElementById("menu")
+
+            sideNav.style.right="-250px";
+
+            menuBtn.onclick = function(){
+                if(sideNav.style.right=="-250px"){
+                    sideNav.style.right="0";
+                    menu.src=="img/close.png";
+                }
+                else{
+                    sideNav.style.right="-250px";
+                    menu.src="img/menu.png";
+                }
+            }
+        </script>
+
+    </body>
+</html>
